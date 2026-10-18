@@ -60,3 +60,5 @@ try {
         Remove-Item -LiteralPath $resolvedSandbox -Recurse -Force
     }
 }
+# Do not leak the final deliberately failing child's exit code to CI callers.
+exit 0
