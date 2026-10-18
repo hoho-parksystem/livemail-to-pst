@@ -1,0 +1,12 @@
+name: Offline PowerShell tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Windows PowerShell 5.1 offline tests
+        shell: powershell
+        run: .\tests\Test-Offline.ps1

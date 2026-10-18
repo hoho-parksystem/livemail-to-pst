@@ -1,0 +1,11 @@
+# Private mail and runtime output must never be published.
+*.pst
+*.ost
+*.eml
+*.msg
+*.dll
+*.import.jsonl
+*.import.lock
+*.log
+test-results/
+.env*
